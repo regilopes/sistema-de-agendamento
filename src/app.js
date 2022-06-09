@@ -1,7 +1,7 @@
 import express from 'express';
-import routes from './router';
+import routes from './routes.js';
 
-class App{
+class App {
    constructor() {
       this.server = express();
       this.middlewares();

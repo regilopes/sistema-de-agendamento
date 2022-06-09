@@ -7,7 +7,7 @@ module.exports = {
             type: Sequelize.INTEGER,
             allowNull: false,
             autoIncrement: true,
-            primaryKey: true,
+            primaryKey: true
          },
          name: {
             type: Sequelize.STRING,
@@ -37,7 +37,7 @@ module.exports = {
       })
    },
 
-   down: async queryInterface => {
+   async down(queryInterface) {
       return queryInterface.dropTable('users')
    }
 };
